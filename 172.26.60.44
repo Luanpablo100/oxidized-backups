@@ -105,8 +105,7 @@
 			<track6-prefix-id>0</track6-prefix-id>
 		</lan>
 	</interfaces>
-	<staticroutes>
-	</staticroutes>
+	<staticroutes></staticroutes>
 	<dhcpd>
 		<lan>
 			<enable></enable>
@@ -313,40 +312,6 @@
 			</created>
 		</rule>
 		<rule>
-			<id></id>
-			<tracker>1672096805</tracker>
-			<type>block</type>
-			<interface>wan</interface>
-			<ipprotocol>inet</ipprotocol>
-			<tag></tag>
-			<tagged></tagged>
-			<max></max>
-			<max-src-nodes></max-src-nodes>
-			<max-src-conn></max-src-conn>
-			<max-src-states></max-src-states>
-			<statetimeout></statetimeout>
-			<statetype><![CDATA[keep state]]></statetype>
-			<os></os>
-			<protocol>tcp</protocol>
-			<source>
-				<any></any>
-			</source>
-			<destination>
-				<any></any>
-				<port>161</port>
-			</destination>
-			<log></log>
-			<descr><![CDATA[R_BLOCK_SNMP]]></descr>
-			<updated>
-				<time>1672096805</time>
-				<username><![CDATA[admin@172.26.48.1 (Local Database)]]></username>
-			</updated>
-			<created>
-				<time>1672096805</time>
-				<username><![CDATA[admin@172.26.48.1 (Local Database)]]></username>
-			</created>
-		</rule>
-		<rule>
 			<type>pass</type>
 			<ipprotocol>inet</ipprotocol>
 			<descr><![CDATA[Default allow LAN to any rule]]></descr>
@@ -531,8 +496,7 @@
 		<prv>LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2QUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktZd2dnU2lBZ0VBQW9JQkFRREdMNDRkVEZuMVFCOWwKenVmTnBCNmt4VUNvSjE3MTBxa0ZUelB1Z3owK0ZoY1M3UFFrVUFLMnFYNUFvbVJtWmhXdWJuWDNkSmFsK1NhcgprYmFMejkxY2loNDBjWmhDYVRyNFFjaVdlUVhFaEs1T1JjSlRlVEdHVTNwTnBoczk2V0svc08yVkY5QXNlL3pLCmx5RS84T21DRWF1RThnVzJCTHdqZGZlUStaVjluVnhCMjVncWFmZTFPdzR2dVY5YWVOYlZ2dDJLcGJtRWxJL0kKNFFXN1dmdXV0Y0dRV0lsSVdZTEkzYUMvcFBZaXRGYUlqdWhGR09nVmVtakZYb1pDc2tGZWVTSWQzTkxiQURzawpWeEYxZDMzcklpbjY0eUh0OCtMMDdxWXA3L2xEY0NrZEZsMXpjbHFpSHJlOXdTeC9hcU5NMHN0RVB1bERKYkl1CndTaUJub0FEQWdNQkFBRUNnZ0VBRFdWOWg4RjNlenFBWk5OZG0rcnlIMVV1RDYvSm5YaEY4SlB3QUxsaVZHWU4KM1R1akxTa3paY0dEUlQ4MDVpOFVYQndmWVVEQ1JpblhVVldpTDBVM3cxK2F0eFRPby82VSs5OEdmaFZrTEdxRApsY3JsWGRzZFcrVWNxVThISEdKQVNKRGZIbXJqcVg0Z0VsbXc1NitUT1RXVWtJSURuTkFwSDRTRDNZcmhiZ0lzCmJvZzRxNUR4Zm9XSnFZQkdVQjQ2ZlJEUkxwM2VHQnJaSXdONVBCcmVlSTUxTFQ1WVp3S3hCWVlPTUpCT2JvKzIKZmVCeE01OGxHc0tNRE1xSWN3WEplZEFrdXhHR0ZRRzRhNHJ2WUNPVWtxb25uKzZYMHd4NTh0N1loSlZ6S2hsUgo1cHRFYjZ5ZnkxK1R0R3psbTY3NnJ0R3dxUHMrQ0g2akdGaHUxS2NSd1FLQmdRRDdJV1orSWdObWc4bUFXZVZBCmZpdnhNanQzeU9PU2pmRXlqcFdiMjhxZ2xXN2FCLzJsYXRpaGJPYUtZakU4RlFCM3cxMWFibUU0a1BoZmFWankKdkx5bG5DaDVNeEc2R0lwWW5TLzNHcDNkMFZWd0NyZjhHWFE4Q21PMzhNb0ZKNy9pbmE1dEtBS1BPMTIybjZ6YwprNThqMzNWSFBCaExMeUpmTGkwWFZyVXNVd0tCZ1FES0IxYjdpSHNVRGorNjl4NDNHOVh2UmJTNzVMZVgvM3VtClpTTkxZcnQ0ODFDRE92SnVJWU9tK3lxSSt2UDFTeTQwTkZMSEM0UDdPYUtWQTFkeW5DTGlvVWhPbFNNWlRveXYKdDUyKy9QS01jRkxrbEo2OHl1TnpvMnJ6a3BzTDA4WEZ3QzBxZllrRlRnNmIzNFNtVm8ySExyT21VYW1mSWpDbgpVTkN0SWNsbmtRS0JnRTBKU2UrWGI0T2JHYzBOeG8ycUpzQ3VzQjltdUtqVWNoRVlQRHk3aDhVTEVoNUFKVWNCCko4TWRMUHQyYzdRQ25Vb2YzQnRKa1BsUlAxL0ZhVXZOS2ZHRG5jYlFLN2Z5bnozZnVqOExJekpRYk8wWjNLYXgKQ0Q4QzBPUTBNVVN6bE9GbmpZSmVxNnBVZzhMcDZKVWhrOGZsWEl5bG1xNDFuMDJqVktHOEw0ZVJBb0dBQ2Q0Ygo2SU05QjdpK2NpSlp6blZFbU1BOTJLT09PQlZaYzhJaTNDN0JXMkgrLzdua1YyNjVvSEZLSFpDc1U4SE5TdTEzClVaT0ZhY0xoNXdkWHdSaFJOK0tLeHBQUU9BODNIZW9KQVdnWGJMYWJ4ZUJnZEhZd2I5aCtnOUVZVTVhUFpWNUMKbG4yMU1KWWtib2FYVXd5Tk14b2IyamJJNHlYblhIUzlESWZHNzVFQ2dZQmJUTkRWUHI2MFdhSHd5RDFidTY4dApuWGEydnphSkQrZzVkaE84WDFsMEJ0Q0tmZ1lKVGZVWmVxZlZMZHlMSWhqMjRLOVdjVEo2YjZVWnp2OEx0Ky9RCmVpTjBXUENtUERWSFl1R3ZaeXRZZ3NnOUovemdPME0zRkRFK3FQdGhIcDB6MktXSHdnY1I5S1M1WityeGhCNSsKRWpieDc1UlRGeFBmRUdoV2lmd2NiQT09Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K</prv>
 	</cert>
 
-	<ppps>
-	</ppps>
+	<ppps></ppps>
 	<installedpackages>
 		<package>
 			<name>squid3</name>
